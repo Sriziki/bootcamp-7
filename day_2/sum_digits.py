@@ -1,15 +1,11 @@
-def sum_digits(A):
-	'''
-	Takes a list A, and returns the sum 
-	of all the digits in the list eg [10,30,45] should return 1 + 0 + 3 + 0 + 4 + 5 = 13
-	'''
-
-	total = 0
-
-	if i in A:
-		total += (i / 10)
-		total += (i % 10)
-
-	return total
+def sum_digits(i):
+    s = 0
+    for n in i :
+        n, remainder = divmod(n, 10)
+        print(n, remainder)
+        s += (remainder + n)
+    return s
+print(sum_digits([10 , 30 , 45]))  
+print (sum_digits([100 , 500 , 200])) 
 
 		
