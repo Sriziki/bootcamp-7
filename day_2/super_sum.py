@@ -8,14 +8,14 @@ def super_sum(A):
 	And returns the sum of all
 	'''
 
-	total = 0
-	for i in A:
-		if i % 2 == 0:
-			total += (i / 2)
-
-		else:
-			total += (i * 2)
-
-	return total	
+	def sum_digits2(i):
+    s = 0
+    for n in A :
+        n, remainder = divmod(n, 10)
+        print(n, remainder)
+        s += (remainder + n)
+    return s
+print(sum_digits2([10 , 30 , 45]))  
+print (sum_digits2([100 , 500 , 200]))
 
 		
