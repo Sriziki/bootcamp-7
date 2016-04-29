@@ -11,18 +11,23 @@ def data_type(x):
 
     return "less than 100"
 
-  elif type(x) == list:   
-        return x[2]
+
 
   elif type(x) == bool:
         return x      
 
-  else: 
-    return None
+  elif type(x) == None: 
+    return"no value"
+
+  elif type(x) == list:   
+        return x[2]
+
+  else:
+        return None  
   
 
 
 
 print (data_type("gerry"))    
-print (data_type([4, 5 ,6]))
-print (data_type(True))    
+print (data_type([4, 5,6]))
+print (data_type(False))   
